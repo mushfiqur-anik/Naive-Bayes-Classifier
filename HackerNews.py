@@ -1,6 +1,6 @@
 # -------------------------------------------------------
 # Assignment 2
-# Written by 40025703
+# Written by Mushfiqur Anik
 # For COMP 472 Section: JX – Summer 2020
 # --------------------------------------------------------
 
@@ -581,6 +581,7 @@ class HackerNews:
                                     "  " + line['Post Type'] + "  " + label + "\n")
 
                 title = []
+
         print(rightCounter)
         print(wrongCounter)
         self.setCorrectClassification(correctClassification)
