@@ -6,6 +6,9 @@ This repository contains the files for NaiveBayesClassifier project done for the
 
 
 ## File List
+- HackerNews.py
+- hns_2018_2019.csv
+- stopwords.txt
 
 ## Built with
 * [**Python**](https://en.wikipedia.org/wiki/Python_(programming_language)) - The Programming language used
