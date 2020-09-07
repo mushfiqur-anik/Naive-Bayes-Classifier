@@ -1,4 +1,4 @@
-# NaiveBayesClassifier
+# Naive-Bayes-Classifier
 This repository contains the files for NaiveBayesClassifier project done for the Artificial intelligence course comp-472 offered by Concordia University(Montreal, Canada)
 
 ## Description 
