@@ -8,6 +8,7 @@ This repository contains the files for HackerNews project done for the Artificia
 ## File List
 
 ## Built with
+* [**Python**](https://en.wikipedia.org/wiki/Java_(programming_language))
 * **Python** https://en.wikipedia.org/wiki/Python_(programming_language) - The Programming language used
 * [**PyCharm**] (https://en.wikipedia.org/wiki/PyCharm) - The IDE used
 
