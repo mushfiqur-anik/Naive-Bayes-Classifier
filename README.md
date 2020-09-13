@@ -2,23 +2,21 @@
 This repository contains the files for NaiveBayesClassifier project done for the Artificial intelligence course comp-472 offered by Concordia University(Montreal, Canada)
 
 ## Description 
-In this project a probabilistic model was built from a set of training data and experimented with different constraints. The words were tokenized from the title . The sentences from the title of the data were tokenized. In the training process we use frequencies of the words and probabilities of occurences with respect to the data points. In the baseline experiment it predicts the data point whether it is right or wrong. In the following three experiments the mentioned constraints were added and the above experiments were repeated again. 
-- Stop word filtering 
-- Word length filtering
-- Infrequent Word filtering
-
-
-In this project a probabilistic model was built (The model correctly classifies which post type (story, ask_hn, show_hn, poll) the selected word belongs to). 
-
-The dataset contains Hacker News posts from 2018-2019 and each post includes the following columns: 
-(Object ID | Title | Post Type | Author | Created At | URL | Points | Number of Comments | year) 
-
-- calculate score using log 10
-- 
-
 The purpose of this project was to learn and apply the concepts of Natural Language Processing(NPL) & Machine Learning(ML). In this project a dataset (Dataset of Kaggle taken from kaggle) was provided and it consisted of posts from users from year 2018-19. 
 Each post includes the following columns: 
 - (Object ID | Title | Post Type | Author | Created At | URL | Points | Number of Comments | year)
+
+Task:1 Extract the data and build the model
+In this task a probabilistic model was built by tokenizing the titles Created At 2018 (Used as the training data). The model consisted of each tokenized word followed by the frequencies & smoothed conditional probabilities of eadch Post Type (story, ask_hn, show_hn, & poll respectively). The model file model-2018.txt looks like:
+- 1 block 3 0.003 40 0.4 10 0.014 4 0.04
+- 2 query 40 0.4 50 0.03 20 0.00014 15 0.4
+
+Task:2 Use Machine Learning Classifier (Naive-Bayes-Classifier) to test dataset
+In this task test our Naive-Bayes-Classifier from the training dataset training dataset to classify posts taken from 2019 into their likely class. The testing results were saved into the baseline-result.txt file. The file consists of each Title followed by the classification given by the classifier, score of each class (story, ask_hn, show_hn, & poll respectively), the correct classification, the label right or wrong. For example: 
+- 1 Y Combinator story 0.004 0.001 0.0002. 0.002 story right
+- 2 A Student's Guide poll 0.002 0.03 0.007 0.12 story wrong
+
+Task:3 Experiments with the classifier
 
 
 
