@@ -17,6 +17,10 @@ In this task test our Naive-Bayes-Classifier from the training dataset training 
 - 2 A Student's Guide poll 0.002 0.03 0.007 0.12 story wrong
 
 Task:3 Experiments with the classifier
+Different variations were performed over the baseline and the above tasks(Task-1 & Task-2) were implemented with the following constraints:
+- 3.1 Stop words filtering - All the words in the stopword.txt file were removed and task-1 & 2 were performed again. The new model & results were saved in                                      stopword-model.txt and stopword-result.txt files respectively.
+- 3.2 Word Length filtering - All the words with length ≤ 2 & length ≥ 9 were removed task-1 & 2 were performed again. The new model & results were saved in                                      wordlength-model.txt and wordlength-result.txt files respectively. 
+- 3.3 Infrequent Word filtering - 
 
 
 
