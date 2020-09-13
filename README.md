@@ -12,15 +12,12 @@ In this task a probabilistic model was built by tokenizing the titles Created At
 - 2 query 40 0.4 50 0.03 20 0.00014 15 0.4
 
 Task:2 Use Machine Learning Classifier (Naive-Bayes-Classifier) to test dataset
-In this task test our Naive-Bayes-Classifier from the training dataset training dataset to classify posts taken from 2019 into their likely class. The testing results were saved into the baseline-result.txt file. The file consists of each Title followed by the classification given by the classifier, score of each class (story, ask_hn, show_hn, & poll respectively), the correct classification, the label right or wrong. For example: 
+In this task test our Naive-Bayes-Classifier from the training dataset training dataset to classify posts taken from 2019 into their likely class. The testing results were saved into the baseline-result.txt file. The file consists of each Title followed by the classification given by the classifier, score of each class (story, ask_hn, show_hn, & poll respectively), the correct classification, the label right or wrong. For example: <p>&nbsp;</p>
 - 1 Y Combinator story 0.004 0.001 0.0002. 0.002 story right
 - 2 A Student's Guide poll 0.002 0.03 0.007 0.12 story wrong
 
 Task:3 Experiments with the classifier
-Different variations were performed over the baseline and the above tasks(Task-1 & Task-2) were implemented with the following constraints:
-- 3.1 Stop words filtering - All the words in the stopword.txt file were removed and task-1 & 2 were performed again. The new model & results were saved in                                      stopword-model.txt and stopword-result.txt files respectively.
-- 3.2 Word Length filtering - All the words with length ≤ 2 & length ≥ 9 were removed task-1 & 2 were performed again. The new model & results were saved in                                      wordlength-model.txt and wordlength-result.txt files respectively. 
-- 3.3 Infrequent Word filtering - 
+Different variations of the above tasks were carried out to check if it improves the performance of the experiment
 
 
 
