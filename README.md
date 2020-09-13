@@ -20,7 +20,7 @@ In this task test our Naive-Bayes-Classifier from the training dataset training 
 Different variations were performed over the baseline and the above tasks(Task-1 & Task-2) were implemented with the following constraints:
 - 3.1 Stop words filtering - All the words in the stopword.txt file were removed and task-1 & 2 were performed again. The new model & results were saved in                                      stopword-model.txt and stopword-result.txt files respectively.
 - 3.2 Word Length filtering - All the words with length ≤ 2 & length ≥ 9 were removed task-1 & 2 were performed again. The new model & results were saved in                                      wordlength-model.txt and wordlength-result.txt files respectively. 
-- 3.3 Infrequent Word filtering - 
+- 3.3 Infrequent Word filtering - Gradually removed words with frequency=1, frequency ≤ 5, frequency ≤ 10, frequency ≤ 15 and frequency ≤ 20 & then gradually removed the top 5% most frequent words, the 10% most frequent words, 15%, 20% and 25% most frequent words. Plotted both the performances of the classifiers against the number of words left in the vocabulary list.
 
 
 ## File List
