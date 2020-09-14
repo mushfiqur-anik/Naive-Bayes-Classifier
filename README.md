@@ -24,7 +24,7 @@ Different variations were performed over the baseline and the above tasks(Task-1
 
 
 ## File List
-- HackerNews.py
+- NaiveBayesClassifier.py
 - hns_2018_2019.csv
 - stopwords.txt
 
