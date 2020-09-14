@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
+# Naive-Bayes-Classifier
+This repository contains the files for NaiveBayesClassifier project done for the Artificial intelligence course comp-472 offered by Concordia University(Montreal, Canada)
 
-You can use the [editor on GitHub](https://github.com/mushfiqur-anik/Naive-Bayes-Classifier/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Description 
+The purpose of this project was to learn and apply the concepts of Natural Language Processing(NPL) & Machine Learning(ML). In this project a dataset (Dataset of Kaggle taken from kaggle) was provided and it consisted of posts from users from year 2018-19. 
+Each post includes the following columns: 
+- (Object ID | Title | Post Type | Author | Created At | URL | Points | Number of Comments | year)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### Task:1 Extract the data and build the model
+In this task a probabilistic model was built by tokenizing the titles Created At 2018 (Used as the training data). The model consisted of each tokenized word followed by the frequencies & smoothed conditional probabilities of eadch Post Type (story, ask_hn, show_hn, & poll respectively). The model file model-2018.txt looks like:
+- 1 block 3 0.003 40 0.4 10 0.014 4 0.04
+- 2 query 40 0.4 50 0.03 20 0.00014 15 0.4
 
-### Markdown
+#### Task:2 Use Machine Learning Classifier (Naive-Bayes-Classifier) to test dataset
+In this task test our Naive-Bayes-Classifier from the training dataset training dataset to classify posts taken from 2019 into their likely class. The testing results were saved into the baseline-result.txt file. The file consists of each Title followed by the classification given by the classifier, score of each class (story, ask_hn, show_hn, & poll respectively), the correct classification, the label right or wrong. For example: 
+- 1 Y Combinator story 0.004 0.001 0.0002. 0.002 story right
+- 2 A Student's Guide poll 0.002 0.03 0.007 0.12 story wrong
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### Task:3 Experiments with the classifier
+Different variations were performed over the baseline and the above tasks(Task-1 & Task-2) were implemented with the following constraints:
+- 3.1 Stop words filtering - All the words in the stopword.txt file were removed and task-1 & 2 were performed again. The new model & results were saved in                                      stopword-model.txt and stopword-result.txt files respectively.
+- 3.2 Word Length filtering - All the words with length ≤ 2 & length ≥ 9 were removed task-1 & 2 were performed again. The new model & results were saved in                                      wordlength-model.txt and wordlength-result.txt files respectively. 
+- 3.3 Infrequent Word filtering - Gradually removed words with frequency=1, frequency ≤ 5, frequency ≤ 10, frequency ≤ 15 and frequency ≤ 20 & then gradually removed the top 5% most frequent words, the 10% most frequent words, 15%, 20% and 25% most frequent words. Plotted both the performances of the classifiers against the number of words left in the vocabulary list.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## File List
+- NaiveBayesClassifier.py
+- hns_2018_2019.csv
+- stopwords.txt
 
-- Bulleted
-- List
+## Built with
+* [**Python**](https://en.wikipedia.org/wiki/Python_(programming_language)) - The Programming language used
+* [**PyCharm**](https://en.wikipedia.org/wiki/PyCharm) - The IDE used
 
-1. Numbered
-2. List
+## Author(s)
 
-**Bold** and _Italic_ and `Code` text
+* [**Mushfiqur Anik**](https://github.com/mushfiqur-anik)
 
-[Link](url) and ![Image](src)
-```
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mushfiqur-anik/Naive-Bayes-Classifier/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+ 
